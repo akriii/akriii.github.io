@@ -7,11 +7,16 @@
     <meta name="description" content="Projects built by Akmal Zaki — full-stack and backend applications.">
 
         <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://hits.sh; object-src 'none'; base-uri 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https://hits.sh; object-src 'none'; base-uri 'self';">
+
+    <!-- Favicon / Chrome Website Icon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,8 +48,8 @@
 
             <div class="grid grid-3">
                 <article class="card project-card reveal d1">
-                    <div class="project-thumb" style="display:grid;place-items:center;background:radial-gradient(circle at 50% 35%, rgba(139,92,246,0.32), rgba(99,102,241,0.12) 70%, transparent 100%);">
-                        <span style="font-size:52px;line-height:1;">&#128737;</span>
+                    <div class="project-thumb" style="display:grid;place-items:center;background:var(--bg-elev-2);border-bottom:1px solid var(--border);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-alert project-thumb-icon"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
                     </div>
                     <div class="project-body">
                         <div class="tags">
@@ -56,7 +61,7 @@
                             <span class="tag b">Supabase</span>
                         </div>
                         <h3>Bouncer</h3>
-                        <p class="desc">A B2B SaaS platform ("Waiting Room as a Service") designed to protect high-demand drops (concert tickets, limited-edition sneakers) from scalper bots and server crashes. Dynamically routes inbound traffic across 3 subscription tiers: digital dam, anti-bot WAF, and scalper killer.</p>
+                        <p class="desc">A B2B SaaS platform ("Waiting Room as a Service") designed to protect high-demand drops (concert tickets, limited-edition sneakers) from scalper bots and server crashes. Dynamically routes inbound traffic across 3 subscription tiers: virtual waiting room, bot protection and grand shuffle lotteries.</p>
                         <div class="project-links">
                             <span class="tag">In Development</span>
                         </div>
@@ -73,9 +78,9 @@
                             <span class="tag b">Vercel</span>
                         </div>
                         <h3>CEE Study Plan</h3>
-                        <p class="desc">A full-stack academic planning tool used by 100+ CEE students to monitor course completion and GPA progression in real time, integrated with HuggingFace API to provide AI feedback on student performance. Architected as a clean 3-layer REST API on Render with a dynamic React frontend on Vercel.</p>
+                        <p class="desc">A full-stack academic planning tool tested by 100+ CEE students to monitor course completion and GPA progression in real time, integrated with HuggingFace API to provide AI feedback on student performance. Architected as a clean 3-layer REST API on Render with a dynamic React frontend on Vercel.</p>
                         <div class="project-links">
-                            <a href="https://study-plan-react.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo <span class="arrow">&rarr;</span></a>
+                            <a href="https://study-plan-react.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
                         </div>
                     </div>
                 </article>
@@ -92,7 +97,7 @@
                         <h3>Prospectif</h3>
                         <p class="desc">Predictive site-selection API for housing development in Perak. Aggregates NAPIC property-overhang data and DOSM employment/income/population data against real district boundaries, and scores OpenStreetMap anchor points (industry, education, lifestyle) to produce heatmap layers.</p>
                         <div class="project-links">
-                            <a href="https://prospectif-api.onrender.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo <span class="arrow">&rarr;</span></a>
+                            <a href="https://prospectif-api.onrender.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
                         </div>
                     </div>
                 </article>
@@ -109,7 +114,7 @@
                             <span class="tag b">Render</span>
                         </div>
                         <h3>UTP VCR</h3>
-                        <p class="desc">Centralized vendor code requisition portal that cut manual verification workload by 60% by digitizing a previously email-based approval process. Implemented a 3-stage verification workflow with role separation across standard users and 3 admin tiers to ensure 1,000+ confidential documents are verified securely.</p>
+                        <p class="desc">Centralized vendor code requisition portal that cut manual verification workload by digitizing a previously email-based approval process. Implemented a 3-stage verification workflow with role separation across standard users and 3 admin tiers to ensure 1,000+ confidential documents are verified securely.</p>
                         
                         <div class="project-links">
                             <span class="tag">Internal system</span>
@@ -118,8 +123,8 @@
                 </article>
 
                 <article class="card project-card reveal d2">
-                    <div class="project-thumb" style="display:grid;place-items:center;background:radial-gradient(circle at 50% 35%, rgba(139,92,246,0.28), transparent 70%);">
-                        <span style="font-size:52px;line-height:1;">&#128739;</span>
+                    <div class="project-thumb" style="display:grid;place-items:center;background:var(--bg-elev-2);border-bottom:1px solid var(--border);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot project-thumb-icon"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
                     </div>
                     <div class="project-body">
                         <div class="tags">
@@ -130,7 +135,7 @@
                         <h3>GridGuard</h3>
                         <p class="desc">An AI-assisted traffic-incident system built for UMHackathon 2026 (Back-End Dev &amp; Documentation). Stateful cyclic reasoning with LangGraph loops drives tool-based decisions for budget checks, fund transfer and contractor dispatch — with end-to-end auditability in PostgreSQL and operational budgeting in DuckDB for municipal projects worth millions of Ringgit.</p>
                         <div class="project-links">
-                            <a href="https://github.com/syahrillhaiqal/umhackathon" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub Repo <span class="arrow">&rarr;</span></a>
+                            <a href="https://github.com/syahrillhaiqal/umhackathon" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub Repo <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
                         </div>
                         <!--<div class="project-links">
                             <span class="tag">UMHackathon 2026</span>
@@ -149,7 +154,7 @@
                         <h3>Task &amp; Project Management System</h3>
                         <p class="desc">A web-based Task and Project Management System designed to help organizations assign, track and manage employee tasks efficiently.</p>
                         <div class="project-links">
-                            <a href="https://github.com/akriii/TaskAndProjectManagementSystem" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub Repo<span class="arrow">&rarr;</span></a>
+                            <a href="https://github.com/akriii/TaskAndProjectManagementSystem" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub Repo <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
                             <!-- <a href="https://akri.kesug.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Site <span class="arrow">&rarr;</span></a> -->
                         </div>
                     </div>
@@ -162,10 +167,9 @@
 
             <div class="cta reveal" style="margin-top:48px;">
                 <h2>Want to see more?</h2>
-                <p>My GitHub has the full picture — repos, experiments and works in progress.</p>
+                <p>My GitHub has the full picture of repos, experiments and works in progress.</p>
                 <div class="contact-methods">
                     <a href="https://github.com/akriii" target="_blank" rel="noopener noreferrer"><img src="images/github(2).png" alt="">Visit my GitHub</a>
-                    <a href="mailto:muhammad_26005849@utp.edu.my"><img src="images/gmail.png" alt="">Get in touch</a>
                 </div>
             </div>
         </section>
@@ -182,6 +186,7 @@
         </div>
     </footer>
 
+    <script src="lucide.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
