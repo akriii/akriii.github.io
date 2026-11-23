@@ -21,3 +21,10 @@ desktop.ini
 *.bak
 *.swp
 *~
+
+#specstory files
+.specstory/
+
+.cursorindexingignore
+
+CLAUDE.md

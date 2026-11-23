@@ -44,15 +44,6 @@
         reveals.forEach(function (el) { el.classList.add("is-visible"); });
     }
 
-    /* --- Pointer-following glow on cards --- */
-    document.querySelectorAll(".card").forEach(function (card) {
-        card.addEventListener("mousemove", function (e) {
-            var r = card.getBoundingClientRect();
-            card.style.setProperty("--mx", (e.clientX - r.left) + "px");
-            card.style.setProperty("--my", (e.clientY - r.top) + "px");
-        });
-    });
-
     /* --- Visitor counter: ignore developer & localhost --- */
     var counterBox = document.querySelector(".footer-counter");
     if (counterBox) {
@@ -93,5 +84,10 @@
             img.height = 20;
             counterBox.appendChild(img);
         }
+    }
+
+    /* --- Initialize Lucide Icons --- */
+    if (window.lucide && typeof window.lucide.createIcons === "function") {
+        window.lucide.createIcons();
     }
 })();
